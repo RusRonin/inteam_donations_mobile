@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDonationActivity">
+
+    <Button
+        android:id="@+id/regular_donation_button"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F5F5F5"
+        android:ellipsize="none"
+        android:onClick="onRegularDonationClick"
+        android:paddingLeft="25px"
+        android:text="Создать сбор"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/target_donation_button" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="715dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/text_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/source_serif_pro"
+        android:text="Тип сбора"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/target_donation_button"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#F5F5F5"
+        android:ellipsize="none"
+        android:onClick="onTargetDonationClick"
+        android:paddingLeft="25px"
+        android:text="Создать сбор"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/regular_donation_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+</android.support.constraint.ConstraintLayout>
